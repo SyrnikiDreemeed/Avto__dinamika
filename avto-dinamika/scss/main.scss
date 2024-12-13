@@ -1,0 +1,15 @@
+// // 1. Abstracts: Variables, Mixins
+// @import './abstracts/variables';
+// @import './abstracts/mixin';
+
+// // 2. Base styles: Reset, Fonts
+// @import './base/reset';
+// @import './base/fonts';
+
+// // 3. Components: Odatiy qayta ishlatishimiz mumkin bo'lgan narsalar
+// @import './components/_header';
+
+// // 4. Pages: Asosiy sahifalardagi maxsus stillar
+// @import './pages/home';
+
+@use "./components/header";
