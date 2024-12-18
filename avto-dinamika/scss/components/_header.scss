@@ -1,16 +1,117 @@
-.header {
-  background-color: yellow;
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
 }
 
-body {
-  background-color: blue;
-  color: white;
+.header__logo {
+    margin-right: 100px;
+    width: 146px;
+    height: 28px;
 }
 
-.p {
-  text-align: center;
+.header__menu {
+    gap: 26px;
+    display: flex;
 }
 
-a {
-  text-align: center;
+.header__link {
+    color: #424242;
+    //styleName: Menu Font Default;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__more::after {
+    background-image: url("../../assets/images/razvernut.svg");
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(50% + 70px);
+}
+
+.header__more2::after {
+    background-image: url("../../assets/images/razvernut.svg");
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(50% + 45px);
+}
+
+.header__more3::after {
+    background-image: url("../../assets/images/razvernut.svg");
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(50% + 55px);
+}
+
+.header__more4::after {
+    background-image: url("../../assets/images/razvernut.svg");
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(50% + 29px);
+}
+
+.header__more5::after {
+    background-image: url("../../assets/images/razvernut.svg");
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(50% + 45px);
+}
+
+.header__more:hover::after {
+    top: 7px;
+    transform: rotate(180deg);
+}
+
+.hidden__menu {
+    display: none;
+}
+.header__link:hover {
+    color: #DC4433;
+}
+.header__item:hover .hidden__menu {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #424242;
+    padding: 10px;
+    position: absolute;
+}
+.hidden__menu {
+    display: none;
+}
+.hidden__link {
+    //styleName: Menu Font Default;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #424242;
+    white-space: nowrap;
 }

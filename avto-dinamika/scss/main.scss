@@ -13,3 +13,6 @@
 // @import './pages/home';
 
 @use "./components/header";
+@use "./components/first";
+@use "./base/reset";
+@use "./components/container";
